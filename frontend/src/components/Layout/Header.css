@@ -1,0 +1,39 @@
+.mobile-header {
+  display: none; /* Hidden by default on desktop */
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.dot {
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .mobile-header {
+    display: flex;
+    background-color: var(--card-background);
+    color: var(--text-color);
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+}
